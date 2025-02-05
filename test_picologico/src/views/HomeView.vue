@@ -1,23 +1,17 @@
 <template>
-  <section class="">
-    <div class="">
-        <h1>BIENVENIDO AL</h1>
-        <h1>HUMANÓMETRO</h1>
+  <section class="flex flex-col justify-around items-center p-[20px] bg-gray-50 h-screen">
+    <div class="flex flex-col justify-center items-center">
+        <h1 class="font-bold text-[25px]">BIENVENIDO AL</h1>
+        <h1 class="font-bold text-blue-500 text-[25px]">HUMANÓMETRO</h1>
     </div>
-    <p>¡Prepárate!Vamos a evaluar tu calidad de humano a través de 5 preguntas. Ideal para reflexionar y compatir con amigos.</p>
-    <button class="">Comenzar</button>
-    <div class="">
-        <img src="../imagenes/Line 1.png" alt="">
-        <img src="../imagenes/Line 1.png" alt="">
-        <img src="../imagenes/Line 1.png" alt="">
-        <img src="../imagenes/Line 1.png" alt="">
-        <img src="../imagenes/Line 1.png" alt="">
-    </div>
+    <p class="text-[20px]">¡Prepárate!Vamos a <br> evaluar tu calidad de <br> humano a través de 5 <br> preguntas. Ideal para <br> reflexionar y <br>compatir con <br> amigos.</p>
+    <button class="rounded-full w-[24vh] h-[24vh] shadow-lg p-4 bg-gray-100 text-[20px] text-gray-500">Comenzar</button>
+    
 
-    <div class="">
-        <button class=""><i class="fa-solid fa-user"></i></button>
-        <button class=""><i class="fa-solid fa-right-from-bracket"></i></button>
-        <button class=""><i class="fa-solid fa-house"></i></button>
+    <div class="flex justify-center items-center gap-[20px]">
+        <button class="rounded-full w-[6vh] h-[6vh] bg-blue-500 text-white"><i class="fa-solid fa-user"></i></button>
+        <button class="rounded-full w-[6vh] h-[6vh] bg-blue-500 text-white"><i class="fa-solid fa-right-from-bracket"></i></button>
+        <button class="rounded-full w-[6vh] h-[6vh] bg-blue-500 text-white"><i class="fa-solid fa-house"></i></button>
     </div>
   </section>
 </template>
@@ -28,6 +22,3 @@ export default {
 }
 </script>
 
-<style>
-
-</style>
