@@ -13,7 +13,8 @@ const routes = [
   {
     path: '/perfil',
     name: 'perfil',
-    component: PerfilView
+    component: PerfilView,
+    meta:{ requiresAuth:true }
   },
   {
     path: '/login',
@@ -31,6 +32,24 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+})
+
+import { auth } from '@/firebase/firebase.js'
+
+router.beforeEach((to,from,next)=>{
+  const user=auth.currentUser
+
+  if (to.meta.requiresAuth) {
+    if (!user) {//el usuario ni se ha logueado
+      next('/login')
+    }else if(!user.emailVerified){//el usuario se logeó pero no verifico el email
+      next('/login')
+    }else{
+      next()
+    }
+  }else{
+    next()
+  }
 })
 
 export default router
