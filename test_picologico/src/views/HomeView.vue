@@ -11,7 +11,7 @@
     <div class="flex justify-center items-center gap-[20px]">
         <button class="rounded-full w-[6vh] h-[6vh] bg-blue-500 text-white"><i class="fa-solid fa-user"></i></button>
         <button class="rounded-full w-[6vh] h-[6vh] bg-blue-500 text-white"><i class="fa-solid fa-right-from-bracket"></i></button>
-        <button class="rounded-full w-[6vh] h-[6vh] bg-blue-500 text-white"><i class="fa-solid fa-house"></i></button>
+        <button class="rounded-full w-[6vh] h-[6vh] bg-blue-500 text-gray-300"><i class="fa-solid fa-house"></i></button>
     </div>
   </section>
 </template>
