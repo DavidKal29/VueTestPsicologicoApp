@@ -32,6 +32,7 @@ export default {
                 let UserCredentials=await createUserWithEmailAndPassword(auth,this.email,this.password)
                 await sendEmailVerification(UserCredentials.user)
                 alert('Registrado correctamente')
+                this.$router.push('/perfil')
             } catch (error) {
                 alert(error.message)
             }
